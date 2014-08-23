@@ -1,0 +1,143 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+
+        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" href="static/css/bootstrap.css">
+
+        <title>
+            
+    Paint Program
+
+        </title>
+
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+
+	<script type="text/javascript">
+
+
+	</script>
+	  <script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+  <link rel="stylesheet" type="text/css" href=static/css/chat.css>
+
+    </head>
+
+    <body>
+        <div class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">Draw With Me</a>
+                </div>
+                <div class="navbar-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+
+                        
+                        <li><a href="/trending/">Trending</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">ben <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/ben">My Profile</a></li>
+                                <li><a href="/password_reset/">Reset Password</a></li>
+                                <li class="divider"></li>
+                                <li><a href="/logout/">Logout</a></li>
+                            </ul>
+                        </li>
+                        
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+			    <div class="col-xs-1">
+			    </div>
+				<div class="col-xs-10">
+   
+				    <div id="mainCanvas">
+				
+				        <canvas id="DrawCanvas" width="800" height="600" >
+				        Your browser does not support the HTML5 canvas tag.</canvas><br>
+				
+				    </div>
+		
+				    <div id="toolkit">
+				
+				
+				        <div class="colorbox" style="background-color:#ff0000;" data-bcolor="red"></div>
+				
+				        <div class="colorbox" style="background-color:#ffa500;" data-bcolor="orange"></div>
+				        <div class="colorbox" style="background-color:#ffff00;" data-bcolor="yellow"></div>
+				        <div class="colorbox" style="background-color:#008000;" data-bcolor="green"></div>
+				        <div class="colorbox" style="background-color:#0000ff;" data-bcolor="blue"></div>
+				        <div class="colorbox" style="background-color:#1e90ff;" data-bcolor="dodgerblue"></div>
+				
+				        <div class="colorbox" style="background-color:#800080;" data-bcolor="purple"></div>
+					        <div class="colorbox" style="background-color:#ee82ee;" data-bcolor="violet"></div>
+				        <div class="colorbox" style="background-color:#ffffff;" data-bcolor="white"></div>
+				        <div class="colorbox" style="background-color:#000000;" data-bcolor="black"></div>
+				        <div class="colorbox" style="background-color:#808080;" data-bcolor="grey"></div>
+				        <div class="colorbox glyphicon glyphicon-star-empty"
+				             style="background-color:#414149; font-size:28px; color:#58ece4; vertical-align:super;" data-bcolor="stars"></div>
+				
+				        <div id="slider"><br>
+				            Brush Width:
+				            <input type="text" id="brushWidth" value="1" readonly style="width: 50%; border:0; color:#341f07; font-weight:bold; display: inline-block;">
+				        </div>
+				
+				        <br><br>
+				
+				        <div id='canvasImg'></div>
+				        
+				
+				            <input type="text" id="imgTitle" placeholder="Your Image Title" />
+				            <a class="btn btn-success" id="bt_saveLocal">Save Image</a>
+				            <a class="btn btn-success" id="bt_saveAs">Save As...</a>
+				            <a class="btn btn-default" id="clearCanvas">Clear Canvas</a>
+				            <a class="btn btn-info" id="bt_download">Download Image</a>
+				    
+				    
+				
+				    </div>
+
+			    <div class="col-xs-1">
+			
+			    </div>
+
+
+
+				</div>
+        </div>
+
+
+        </div>
+
+
+
+        <footer>
+            <div class="container">
+                A Binnie Production. Copyright 2014.
+            </div>
+        </footer>
+
+        <script src="static/js/jquery.min.js"></script>
+        <script src="static/js/custom.js"></script>
+        <script src="static/js/index.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    </body>
+</html>

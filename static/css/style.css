@@ -1,0 +1,74 @@
+body {
+/*text-align: center;*/
+}
+
+/* HOME PAGE */
+
+.colorbox {
+	display: inline-block;
+	height:40px;
+	width: 40px;
+    border: 1px solid silver;
+}
+
+.colorbox:hover{
+    box-shadow: 0px 0px 10px #888;
+}
+
+#DrawCanvas {
+	position: relative;
+	margin: 0 auto;
+	border: 2px solid #d3d3d3;
+	/*height:600px;*/
+	/*width: 1000px;*/
+    /*cursor:url(http://dev.kremerdesign.com/draw-with-me/staticfiles/media/brush2.png) 15 60, auto;*/
+    cursor:url(http://dev.kremerdesign.com/draw-with-me/staticfiles/media/brush2.png) 0 30, auto;
+}
+
+#slider{
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 10px;
+    width:250px;
+}
+
+/*#toolkit{*/
+    /*max-width: 1000px;*/
+/*}*/
+
+#imgTitle{
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+/* PROFILE PAGE */
+
+.drawing-container{
+    display: inline-block;
+    width: 360px;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin: 8px;
+}
+
+.drawing-container:hover{
+    border: 1px solid rgba(84, 87, 105, 0.10);
+    box-shadow: 0px 0px 10px #888;
+}
+.drawing{
+    width: 100%;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: rgba(84, 87, 105, 0.07);
+    padding: 30px 0;
+    margin-top: 40px;
+    color: #979797;
+    border-top: 1px #979797;
+}
